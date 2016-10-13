@@ -1,0 +1,624 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    color: #000;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.clearfix::before, .clearfix::after {
+    contetn: '';
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
+}
+
+.section {
+    position: relative;
+    overflow: hidden;
+}
+
+.first {
+    background: url(../images/01.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.second {
+    background: url(../images/01.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.third {
+    background: url(../images/01.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.fourch {
+    background: url(../images/01.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.fifth {
+    background: url(../images/01.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.sixth {
+    background: url(../images/01.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.header {
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.l_header {
+    float: left;
+}
+
+.header img {
+    width: 60px;
+    height: 50px;
+    position: relative;
+    border-radius: 50%;
+    float: left;
+}
+
+.header .info {
+    padding: 20px 20px;
+    float: left;
+}
+
+.r_header {
+    float: right;
+}
+
+.r_header li {
+    float: left;
+}
+
+.r_header li a {
+    display: block;
+    padding: 20px;
+}
+
+aside {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 20;
+    width: 50px;
+    height: auto;
+}
+
+aside a {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin-top: 10px;
+    position: relative;
+}
+
+aside a b {
+    display: none;
+    position: absolute;
+    left: -60px;
+    width: 50px;
+    height: 20px;
+    font-size: 12px;
+    text-align: right;
+    color: #666;
+    font-weight: normal;
+}
+
+aside a.selected {
+    background: url(../image/aside_2.png) no-repeat center center;
+}
+
+/*第一屏*/
+.first .selfinfo {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-sizing: content-box;
+    transform: translateY(300px)
+}
+
+.first .selfinfo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: 3px solid green;
+    border-bottom: 3px solid pink;
+    border-left: 3px solid pink;
+    border-right: 3px solid green;
+}
+
+.first p {
+    text-align: center;
+    line-height: 35px;
+    font-family: "microsoft yahei";
+}
+
+.first .motto {
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 2px solid #ccc;
+    font-size: 23px;
+    margin-bottom: 30px;
+    font-family: "microsoft yahei";
+}
+
+.first p {
+    opacity: 0;
+}
+
+.title_en {
+    width: 0;
+    margin: 3px auto;
+    padding: 5px 0;
+    border-top: 2px solid #f00;
+}
+
+.title_en h2 {
+    display: none;
+}
+
+/*第一屏动画*/
+.first.now .selfinfo {
+    transform: translateY(0);
+    transition: all 1s linear;
+}
+
+.first.now p:nth-child(1) {
+    transition: all 2s linear 1s;
+    opacity: 1;
+}
+
+.first.now p:nth-child(2) {
+    transition: all 2s linear 2s;
+    opacity: 1;
+}
+
+.first.now p:nth-child(3) {
+    transition: all 2s linear 3s;
+    opacity: 1;
+}
+
+.first.now p:nth-child(4) {
+    transition: all 2s linear 4s;
+    opacity: 1;
+}
+
+.first.now p:nth-child(5) {
+    transition: all 2s linear 5s;
+    opacity: 1;
+}
+
+/*第二屏*/
+.second {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#about_content h1 {
+    font-weight: normal;
+    font-size: 24px;
+    margin: 20px auto;
+}
+
+#about_content h2 {
+    font-size: 16px;
+}
+
+.second .about_info {
+    width: 50%;
+    height: 150px;
+    padding: 20px;
+    background-color: #a0a0b4;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.student {
+    width: 25%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.second .about_info .one {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.second .about_info .one img {
+    margin-top: 10px;
+    position: absolute;
+    left: 10px;
+    /*transition: all 1s linear;*/
+}
+
+.second .about_info .dis {
+    font-size: 14px;
+    color: #fff
+}
+
+.second .about_info .dis span:first-child {
+    position: absolute;
+    left: 27px;
+    top: 95px;
+}
+
+.second .about_info .dis span:last-child {
+    position: absolute;
+    right: 56px;
+    top: 120px;
+}
+
+.second .about_info .dis .line {
+    position: absolute;
+    left: 26px;
+    top: 113px;
+    width: 90px;
+    background-color: #cccccc;
+    height: 2px;
+    transform: rotate(-20deg)
+}
+
+.s_text {
+    width: 50%;
+    height: 200px;
+    margin: 70px auto;
+    position: relative;
+
+}
+
+.s_text .before, .s_text .after {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.s_text .before {
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    top: -22px;
+    left: -55px;
+}
+
+.s_text .after {
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    top: 140px;
+    right: -42px;
+}
+
+.s_text p {
+    height: 40px;
+    line-height: 40px;
+    transform: translateY(300px)
+}
+
+
+.title {
+    text-align: center;
+    width: 100%;
+    height: 60px;
+}
+
+.title_en {
+    width: 0;
+    margin: 3px auto;
+    padding: 5px 0;
+    border-top: 2px solid #f00;
+}
+
+.title_en h2 {
+    font-size: 14px;
+    display: none;
+}
+.s_text p:nth-child(2){
+    margin-top: -30px;
+}
+/*第二屏动画*/
+/*.second.now .one:nth-child(1) {*/
+/*border: 3px solid #ccc;*/
+/*background-color: #fff;*/
+/*transition: all 1s linear;*/
+/*}*/
+
+.second.now .s_text p:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out;
+}
+
+.second.now .s_text p:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out 1s;
+}
+
+.second.now .s_text p:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out 2s;
+}
+
+.second.now .s_text p:nth-child(5) {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out 3s;
+}
+
+/*第三屏*/
+.title {
+    font-size: 20px;
+    text-align: center;
+}
+
+#skill_content h1 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: -50px;
+    padding: 0;
+}
+
+#skill_content h2 {
+    font-size: 16px;
+}
+
+.third {
+    text-align: center;
+    /*padding-top: 50px;*/
+    padding: 0;
+    width: 100%;
+}
+
+.third p {
+    width: 100%;
+    font-size: 16px;
+    /*padding-left: 15%;*/
+    margin-top: 50px;
+}
+
+.third .content {
+    width: 100%;
+    margin-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.third .content .pub {
+    width: 20%;
+    text-align: center;
+    float: left;
+    transform: scale(0);
+    transition: all 1s linear;
+    position: relative;
+}
+
+.third .content .pub:hover img:nth-child(1) {
+    transform: scale(1.3);
+    transition: all 0.3s linear;
+}
+
+.third .content .pub .discript {
+    padding: 20px
+}
+
+.third .content .pub .place {
+    font-size: 12px;
+    width: 120%;
+    background-color: #cccccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 200px;
+    display: none;
+}
+
+.third .content .pub .place li {
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 30px;
+}
+.third.now .content .pub{
+    transform: scale(1);
+}
+
+.fourch {
+    text-align: center;
+    width: 100%;
+    /*padding-top: 80px;*/
+}
+
+#exps_content h1 {
+    font-weight: normal;
+    font-size: 24px;
+}
+.fourch .margin{
+    margin-top: 50px;
+}
+.slider {
+    margin: 40px auto;
+    height: 300px;
+    width: 900px;
+}
+
+.slider .item {
+    width: 100%;
+    height: 100%;
+    background: url(../image/exp_list_bg.jpg);
+    background-size: 900px 300px;
+    float: left;
+}
+
+.slider .item .left {
+    float: left;
+    width: 70%;
+    text-align: left;
+}
+
+.slider .item .left li {
+    padding-left: 10%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.slider .item .left li {
+    position: relative;
+}
+
+.slider .item .left li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    position: absolute;
+    border-radius: 50%;
+    top: 17px;
+    left: 33px;
+
+}
+
+.slider .item .left h3 {
+    text-align: center;
+}
+
+.slider .item .left p {
+    text-align: center;
+}
+
+/*第五屏*/
+.fifth {
+    width: 100%;
+    text-align: center;
+}
+.fifth h1{
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    font-weight: normal;
+    font-size: 24px;
+}
+.fifth .box {
+    width: 80%;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.fifth .public {
+    width: 18%;
+    height: 150px;
+    float: left;
+    margin-left: 60px;
+
+}
+
+.fifth .public img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px #333;
+}
+
+.fifth .b_line {
+    width: 70%;
+    height: 1px;
+    background-color: #C81623;
+    margin: 80px auto;
+    position:relative;
+    top: 45px;
+}
+
+.sixth {
+    text-align: center;
+}
+
+.sixth h1 {
+    font-weight: normal;
+    font-size:24px;
+    /*padding-top: 80px;*/
+}
+
+.sixth .dream {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.sixth .english {
+    font-size: 30px;
+    font-family: "consolus";
+    font-weight: 700;
+}
+
+.sixth .english span:nth-child(1) {
+    color: #C81623;
+}
+
+.sixth .english span:nth-child(2) {
+    color: deepskyblue;
+}
+
+.sixth .english span:nth-child(3) {
+    color: green;
+}
+
+.sixth .english span:nth-child(4) {
+    color: orangered;
+}
+
+.sixth .like {
+    padding: 50px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.six_line {
+    width: 100%;
+    height: 2px;
+    background-color: #cccccc;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--Flash人形时钟：放在页面底部，加快vue.js的解析速度-->
+<div style="position:fixed; top:50px; right:0;" class="hidden-xs">
+    <script type="text/javascript" src="lib/flash-clock/clock.js"></script>
+</div>
+<div class="dv">
+    <p>4646</p>
+    <div class="dv1">dv</div>
+</div>
+<div class="dv">
+    <p>1313</p>
+    <div class="dv1">dv2</div>
+</div>
+<script>
+    var ps = document.getElementsByTagName('p')
+    var dv1 = document.getElementsByClassName('dv1')
+    for (var i = 0; i < ps.length; i++) {
+        ps[i].onclick = function () {
+            for (var i = 0; i < dv1.length; i++) {
+                dv1[i].index = i;
+                for (var j = 0; j < dv1.length; j++) {
+                    dv1[j].style.backgroundColor = '#fff'
+                }
+                dv1[dv1[i].index].style.backgroundColor = 'red';
+            }
+        }
+
+    }
+</script>
+</body>
+</html>
